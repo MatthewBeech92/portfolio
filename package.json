@@ -1,0 +1,20 @@
+{
+  "name": "matthew-beech-portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio website showcasing all of my web design work.",
+  "author": "Matthew Beech",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "prettier": "2.2.1",
+    "sass": "^1.32.6"
+  }
+}
