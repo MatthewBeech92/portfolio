@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #home::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @apply bg-header-mobile 
+    md:bg-header-desktop
+    bg-cover 
+    bg-center
+    -z-10;
+  }
+
+  #home header::before,
+  #home header::after {
+    content: '';
+    border: 1px solid #fff;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+  }
+
+  #home header::before {
+    top: 0;
+  }
+
+  #home header::after {
+    bottom: 0;
+  }
+
+  .btn {
+    @apply p-4
+    text-center;
+  }
+}
+
+@layer utilities {
+  .flex-col-center {
+    @apply flex
+    flex-col
+    justify-center
+    items-center;
+  }
+}
