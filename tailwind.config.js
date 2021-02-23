@@ -7,6 +7,15 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '375px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1440px',
+      '3xl': '1920px',
+      '4xl': '2560px',
+    },
     colors: {
       white: '#fff',
       grey: colors.trueGray,
@@ -15,6 +24,18 @@ module.exports = {
     },
     fontFamily: {
       nunito: ['Nunito', 'sans-serif'],
+      caveat: ['Caveat', 'cursive'],
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      0: '0',
+      2: '2px',
+      3: '3px',
+      4: '4px',
+      6: '6px',
+      8: '8px',
+      24: '24px',
+      48: '48px',
     },
     zIndex: {
       '-50': '-50',
@@ -35,10 +56,13 @@ module.exports = {
         'header-mobile': "url('/images/header-background-mobile.jpg')",
         'header-desktop': "url('/images/header-background-desktop.jpg')",
       }),
+      maxWidth: {
+        '3-1/2': '52rem',
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };
