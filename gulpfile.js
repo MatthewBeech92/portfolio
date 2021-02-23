@@ -8,7 +8,7 @@ function html() {
 
 function css(cb) {
   src('./src/css/*.css')
-    .pipe(postcss([require('tailwindcss'), require('autoprefixer')]))
+    .pipe(postcss([require('tailwindcss'), require('postcss-nesting'), require('autoprefixer')]))
     .pipe(dest('./public/css/'));
   cb();
 }
