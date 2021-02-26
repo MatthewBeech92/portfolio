@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: true,
     content: ['./public/index.html'],
   },
   darkMode: false, // or 'media' or 'class'
@@ -21,6 +21,8 @@ module.exports = {
       grey: colors.trueGray,
       teal: colors.teal,
       blue: colors.lightBlue,
+      red: colors.red,
+      green: colors.green,
     },
     fontFamily: {
       nunito: ['Nunito', 'sans-serif'],
