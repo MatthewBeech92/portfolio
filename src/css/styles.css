@@ -37,12 +37,16 @@
     }
   }
 
-  .btn-primary {
+  .btn {
     @apply inline-block py-2 px-4 text-center rounded cursor-pointer;
-  }
 
-  .btn-secondary {
-    @apply inline-block py-2 px-4 text-center rounded cursor-pointer bg-white border-2 font-bold;
+    &.btn-primary {
+      @apply bg-teal-700 hover:bg-teal-300 hover:text-teal-900;
+    }
+
+    &.btn-secondary {
+      @apply bg-white border-2 font-bold outline-none;
+    }
   }
 
   form > div {
@@ -62,6 +66,18 @@
     }
   }
 
+  .alert {
+    @apply p-2 rounded font-bold;
+
+    &.success {
+      @apply text-green-700 bg-green-50 border-2 border-green-700 text-center;
+    }
+
+    &.error {
+      @apply mt-2 text-red-700 bg-red-50 border-2 border-red-700;
+    }
+  }
+
   @screen 2xl {
     form {
       @apply flex flex-wrap justify-between max-w-3-1/2 mx-auto !important;
@@ -76,10 +92,6 @@
 @layer utilities {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
-  }
-
-  .margin-center {
-    margin: 0 auto;
   }
 
   .absolute-x-center {
